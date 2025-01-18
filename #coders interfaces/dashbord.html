@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashbord</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="dashbord.css">
+</head>
+<body>
+    <div class="container mt-4">
+        <!-- Header -->
+         
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="https://sola.lk/wp-content/uploads/2024/11/Main-Logo.svg" alt="Sola Main Logo" width="50" height="50"> Dashbord
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="bi bi-house"></i> Home
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="bi bi-search"></i> Search
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="bi bi-bell"></i> Notifications
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9tI2bSaV35e7k5GFhKVR8t3U2Mrzvu_Zgkg&s" class="rounded-circle" height="30" alt="User Profile" loading="lazy">
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">My Profile</a></li>
+                                <li><a class="dropdown-item" href="#">Settings</a></li>
+                                <li><a class="dropdown-item" href="#">Logout</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Navbar -->
+        <div class="row">
+            <!-- Recent Activity -->
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 p-3">
+                    <h2 class="h5">Recent Activity</h2>
+                    <ul class="list-unstyled">
+                        <li>32 min ago</li>
+                        <li>56 min ago</li>
+                        <li>2 hrs ago</li>
+                        <li>1 day ago</li>
+                        <li>2 days ago</li>
+                        <li>4 weeks ago</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Website Traffic -->
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 p-3 text-center">
+                    <h2 class="h5">Website Traffic Today</h2>
+                    <canvas id="trafficChart" class="chart mt-3"></canvas>
+                </div>
+            </div>
+
+            <!-- News and Updates -->
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 p-3">
+                    <h2 class="h5">News & Updates Today</h2>
+                    <div class="news-item">
+                        <input type="checkbox" class="form-check-input me-2"> News update 1
+                    </div>
+                    <div class="news-item">
+                        <input type="checkbox" class="form-check-input me-2"> News update 2
+                    </div>
+                    <div class="news-item">
+                        <input type="checkbox" class="form-check-input me-2"> News update 3
+                    </div>
+                    <div class="news-item">
+                        <input type="checkbox" class="form-check-input me-2"> News update 4
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="dashbord.js"></script>
+</body>
+</html>
